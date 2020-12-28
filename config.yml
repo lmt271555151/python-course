@@ -1,0 +1,16 @@
+title: python自动化
+description: 自动化接口
+template:
+  repo: python-template
+  name: python
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
